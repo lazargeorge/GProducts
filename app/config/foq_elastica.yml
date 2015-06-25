@@ -1,0 +1,16 @@
+foq_elastica:  
+    clients:
+        default: { host: localhost, port: 9200 }
+    indexes:
+        bookmarks:
+            client: default
+            types:
+                site:
+                    mappings:
+                        name:
+                        keywords:
+                    doctrine:
+                        driver: orm
+                        model: Blogger\BlogBundle\Entity\Doctrine
+                        provider:
+                        listener:

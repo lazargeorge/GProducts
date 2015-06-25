@@ -1,0 +1,17 @@
+{# src/Blogger/BlogBundle/Resources/views/layout.html.twig #}
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/bloggerblog/css/blog.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block sidebar %}
+   <h5> Search by Price</h5>
+   <ul>
+ 
+  <li> <a href="#"> <5$</li> 
+  <li> <a href="#"> 5$-10$</a></li> 
+   <li>  <a href="#"> 10$-30$</a></li> 
+    </ul>
+{% endblock %}

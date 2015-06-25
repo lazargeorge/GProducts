@@ -1,0 +1,10 @@
+{# src/Blogger/BlogBundle/Resources/views/Page/index.html.twig #}
+{% extends 'BloggerBlogBundle::layout.html.twig' %}
+
+{% block body %}
+    Search homepage
+   <form action="{{ path('BloggerBlogBundle_search') }}" >
+<input type="textbox" name="find">
+<input type="submit" value="search">
+    </form>
+{% endblock %}

@@ -1,0 +1,4 @@
+# app/config/config.yml
+parameters:
+    # Blogger contact email address
+    blogger_blog.emails.contact_email: assistant@email.com
